@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
+import Banner from "./components/Banner";
 import Card from "./components/Card";
 
 const destinos = [
@@ -84,6 +85,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <Banner />
       <div className="container mt-4">
         <div className="row">
           {destinos.map((destino, i) => (
