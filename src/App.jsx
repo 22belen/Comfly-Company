@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 import Card from "./components/Card";
+import Footer from "./components/Footer";
 
 const destinos = [
   {
@@ -80,8 +81,6 @@ const destinos = [
 ];
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <Navbar />
@@ -93,6 +92,7 @@ function App() {
           ))}
         </div>
       </div>
+      <Footer />
     </>
   );
 }
